@@ -81,7 +81,7 @@ namespace Library
 
         private void Bill_Resize(object sender, EventArgs e)
         {
-
+            //6yty6huhuhji
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
