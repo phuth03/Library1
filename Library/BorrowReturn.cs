@@ -57,7 +57,7 @@ namespace Library
         {
             this.Hide();
 
-            Bill bill = new Bill(txtID.Text,txtName.Text,dtpBorrowDate.Text, dtpReturnDate.Text, txtStaff.Text);
+            Bill bill = new Bill(txtID.Text,txtName.Text,dtpBorrowDate.Text, dtpReturnDate.Text, txtStaff.Text, txtBookID.Text);
             bill.Show();
         }
 

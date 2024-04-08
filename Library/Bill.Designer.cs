@@ -45,6 +45,8 @@
             label12 = new Label();
             btnPrint = new Button();
             btnCancel = new Button();
+            label4 = new Label();
+            lblBookID = new Label();
             SuspendLayout();
             // 
             // label1
@@ -91,7 +93,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(12, 188);
+            label5.Location = new Point(12, 226);
             label5.Name = "label5";
             label5.Size = new Size(116, 25);
             label5.TabIndex = 3;
@@ -101,7 +103,7 @@
             // 
             lblBookName.AutoSize = true;
             lblBookName.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblBookName.Location = new Point(140, 190);
+            lblBookName.Location = new Point(140, 228);
             lblBookName.Name = "lblBookName";
             lblBookName.Size = new Size(47, 23);
             lblBookName.TabIndex = 4;
@@ -111,7 +113,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(12, 246);
+            label7.Location = new Point(12, 274);
             label7.Name = "label7";
             label7.Size = new Size(122, 25);
             label7.TabIndex = 3;
@@ -121,17 +123,18 @@
             // 
             lblBorrowDate.AutoSize = true;
             lblBorrowDate.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblBorrowDate.Location = new Point(140, 248);
+            lblBorrowDate.Location = new Point(140, 276);
             lblBorrowDate.Name = "lblBorrowDate";
             lblBorrowDate.Size = new Size(47, 23);
             lblBorrowDate.TabIndex = 4;
             lblBorrowDate.Text = "   ...  ";
+            lblBorrowDate.Click += lblBorrowDate_Click;
             // 
             // label9
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(12, 312);
+            label9.Location = new Point(12, 331);
             label9.Name = "label9";
             label9.Size = new Size(118, 25);
             label9.TabIndex = 3;
@@ -141,7 +144,7 @@
             // 
             lblReturnDate.AutoSize = true;
             lblReturnDate.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblReturnDate.Location = new Point(140, 314);
+            lblReturnDate.Location = new Point(140, 333);
             lblReturnDate.Name = "lblReturnDate";
             lblReturnDate.Size = new Size(47, 23);
             lblReturnDate.TabIndex = 4;
@@ -216,6 +219,26 @@
             btnCancel.UseVisualStyleBackColor = true;
             btnCancel.Click += btnCancel_Click;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(12, 169);
+            label4.Name = "label4";
+            label4.Size = new Size(85, 25);
+            label4.TabIndex = 3;
+            label4.Text = "Book ID:";
+            // 
+            // lblBookID
+            // 
+            lblBookID.AutoSize = true;
+            lblBookID.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblBookID.Location = new Point(140, 171);
+            lblBookID.Name = "lblBookID";
+            lblBookID.Size = new Size(47, 23);
+            lblBookID.TabIndex = 4;
+            lblBookID.Text = "   ...  ";
+            // 
             // Bill
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -228,9 +251,11 @@
             Controls.Add(panel1);
             Controls.Add(lblReturnDate);
             Controls.Add(lblStaffID);
+            Controls.Add(lblBookID);
             Controls.Add(lblBookName);
             Controls.Add(label11);
             Controls.Add(label13);
+            Controls.Add(label4);
             Controls.Add(label9);
             Controls.Add(label5);
             Controls.Add(lblBorrowDate);
@@ -266,5 +291,7 @@
         private Label label12;
         private Button btnPrint;
         private Button btnCancel;
+        private Label label4;
+        private Label lblBookID;
     }
 }

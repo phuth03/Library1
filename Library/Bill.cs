@@ -30,13 +30,15 @@ namespace Library
             printDocuments1.PrintPage += new PrintPageEventHandler(printDocument1_PrintPage);
         }
 
-        public Bill(string message, string message2, string message3, string message4, string message5) : this()
+        public Bill(string message, string message2, string message3, string message4, string message5, string message6) : this()
         {
             lblBorrowID.Text = message;
             lblBookName.Text = message2;
             lblBorrowDate.Text = message3;
             lblReturnDate.Text = message4;
             lblStaffID.Text = message5;
+            lblBookID.Text = message6;
+
         }
         private void Bill_Load(object sender, EventArgs e)
         {
@@ -89,6 +91,11 @@ namespace Library
             this.Hide();
             BorrowReturn borrowReturn = new BorrowReturn();
             borrowReturn.Show();
+        }
+
+        private void lblBorrowDate_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
